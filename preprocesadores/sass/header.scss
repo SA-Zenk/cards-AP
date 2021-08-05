@@ -1,0 +1,43 @@
+.header {
+ display: flex;
+ width: 100%;
+ position: relative;
+
+ &__imagen {
+  width: 100%;
+  height: 70%;
+ }
+
+ &__contenedor {
+  position: relative;
+ }
+
+ &__contenedor::after {
+  content: "";
+  background-color: rgba(126, 25, 226, 0.439);
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+ }
+
+ &__imagen {
+  display: block;
+ }
+
+ &__texto-contenedor {
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  z-index: 10;
+ }
+
+ &__title {
+  font-size: 43px;
+  color: rgba(237, 236, 236, 0.905);
+ }
+}

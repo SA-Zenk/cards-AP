@@ -1,0 +1,30 @@
+.navigation {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 30px 10%;
+ background: rgb(0, 0, 0);
+
+ &__logo {
+  cursor: pointer;
+ }
+
+ &__item {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+ }
+
+ &__link {
+  font-family: "Gill Sans";
+  font-weight: 500;
+  font-size: 16px;
+  color: #faf4f4ee;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+ }
+
+ &__link:hover {
+  color: #0088a9;
+ }
+}

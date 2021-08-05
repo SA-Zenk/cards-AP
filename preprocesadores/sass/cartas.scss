@@ -1,0 +1,87 @@
+.cartas {
+ width: 140px;
+ height: 200px;
+ clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 16%);
+ background-color: rgba(0, 0, 0, 0.22);
+ color: rgba(255, 255, 255, 0.967);
+ border-radius: 15px;
+ font-family: sans-serif;
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ margin: 15px;
+
+
+ &::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #13131367;
+  z-index: 1;
+ }
+
+ &:hover .cartas__image {
+  transform: translate(-50%, -50%) scale(1.2);
+ }
+
+ &__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+  transition: transform .3s;
+ }
+
+ &__title {
+  padding: 12px 0;
+  text-align: center;
+ }
+
+ &__date {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 0 10px;
+ }
+
+ &__day {
+  font-size: 40px;
+  font-weight: bold;
+ }
+
+ &__pipe {
+  padding: 0 8px;
+ }
+
+ &__footer {
+  color: #ffffff;
+  display: flex;
+  padding: 22px 0 0 5px;
+ }
+
+ &__icon {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff62;
+  border-radius: 50%;
+  padding: 6px;
+  margin: 0 2px;
+ }
+}
+
+.contenido {
+
+ &__container {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.823);
+ }
+}

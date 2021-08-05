@@ -1,0 +1,265 @@
+@import "sass/globals.scss";
+@import "sass/navegation.scss";
+@import "sass/titulo.scss";
+@import "sass/header.scss";
+@import "sass/calendar.scss";
+@import "sass/card.scss";
+@import "sass/cartas.scss";
+
+
+body {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+/* navigation*/
+.navigation {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 30px 10%;
+ background: rgb(0, 0, 0);
+
+ &__logo {
+  cursor: pointer;
+ }
+
+ &__item {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+ }
+
+ &__link {
+  font-family: "Gill Sans";
+  font-weight: 500;
+  font-size: 16px;
+  color: #faf4f4ee;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+ }
+
+ &__link:hover {
+  color: #0088a9;
+ }
+}
+/* navigation */
+/* titulo */
+.titulo {
+ &__texto {
+  height: 50px;
+  background: rgb(204, 204, 204);
+  margin: 0;
+ }
+}
+/* titulo */
+.header {
+ display: flex;
+ width: 100%;
+ position: relative;
+
+ &__imagen {
+  width: 100%;
+  height: 70%;
+ }
+
+ &__contenedor {
+  position: relative;
+ }
+
+ &__contenedor::after {
+  content: "";
+  background-color: rgba(126, 25, 226, 0.439);
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+ }
+
+ &__imagen {
+  display: block;
+ }
+
+ &__texto-contenedor {
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  z-index: 10;
+ }
+
+ &__title {
+  font-size: 43px;
+  color: rgba(237, 236, 236, 0.905);
+ }
+}
+/* header */
+/* calendar */
+
+.calendar {
+
+ &__texto {
+  height: 50px;
+  background: rgb(204, 204, 204);
+  margin: 0;
+ }
+
+ &__container {
+ display: flex;
+ justify-content: center;
+ height: 250px;
+ background: rgb(2, 2, 2);
+
+ }
+}
+/* calendar */
+/* card */
+
+.card {
+ width: 140px;
+ height: 200px;
+ clip-path: polygon(34% 0, 100% 0, 100% 83%, 75% 100%, 0 100%, 0 16%);
+ background-color: rgba(5, 238, 33, 0.774);
+ color: white;
+ border-radius: 15px;
+ font-family: sans-serif;
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ margin: 15px;
+ border: 5px solid rgba(251, 252, 253, 0.78);
+
+ &:hover {
+  transform: translate(-3%, -3%) scale(1.0);
+  background-color: #04cc0496;
+ }
+
+ &__title {
+  padding: 12px 0;
+  text-align: center;
+ }
+
+ &__date {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 0 10px;
+ }
+
+ &__day {
+  font-size: 40px;
+  font-weight: bold;
+ }
+
+ &__pipe {
+  padding: 0 8px;
+ }
+ 
+ &__footer {
+  color: #ffffff;
+  display: flex;
+  padding: 22px 0 0 5px;
+ }
+
+ &__icon {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff55;
+  border-radius: 50%;
+  padding: 6px;
+  margin: 0 2px;
+ }
+}
+/* card */
+/* cartas */
+
+.cartas {
+ width: 140px;
+ height: 200px;
+ clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 16%);
+ background-color: rgba(0, 0, 0, 0.22);
+ color: rgba(255, 255, 255, 0.967);
+ border-radius: 15px;
+ font-family: sans-serif;
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ margin: 15px;
+
+
+ &::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #13131367;
+  z-index: 1;
+ }
+
+ &:hover .cartas__image {
+  transform: translate(-50%, -50%) scale(1.2);
+ }
+
+ &__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+  transition: transform .3s;
+ }
+
+ &__title {
+  padding: 12px 0;
+  text-align: center;
+ }
+
+ &__date {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 0 10px;
+ }
+
+ &__day {
+  font-size: 40px;
+  font-weight: bold;
+ }
+
+ &__pipe {
+  padding: 0 8px;
+ }
+
+ &__footer {
+  color: #ffffff;
+  display: flex;
+  padding: 22px 0 0 5px;
+ }
+
+ &__icon {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff62;
+  border-radius: 50%;
+  padding: 6px;
+  margin: 0 2px;
+ }
+}
+
+.contenido {
+
+ &__container {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.823);
+ }
+}
+

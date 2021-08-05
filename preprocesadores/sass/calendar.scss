@@ -1,0 +1,16 @@
+.calendar {
+
+ &__texto {
+  height: 50px;
+  background: rgb(204, 204, 204);
+  margin: 0;
+ }
+
+ &__container {
+ display: flex;
+ justify-content: center;
+ height: 250px;
+ background: rgb(2, 2, 2);
+
+ }
+}
